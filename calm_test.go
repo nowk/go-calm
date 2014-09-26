@@ -16,3 +16,10 @@ func TestCalm(t *testing.T) {
 	})
 	assert.Nil(t, err)
 }
+
+func TestStringPanic(t *testing.T) {
+	err := Calm(func() {
+		panic("Return Me!")
+	})
+	assert.Equal(t, "Return Me!", err.Error())
+}
