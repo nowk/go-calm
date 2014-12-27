@@ -2,7 +2,7 @@ package main
 
 import "log"
 import "reflect"
-import . "github.com/nowk/go-calm"
+import . "gopkg.in/nowk/go-calm.v1"
 
 type S struct{}
 
