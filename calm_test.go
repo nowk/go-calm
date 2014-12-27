@@ -1,9 +1,8 @@
-package calm_test
+package calm
 
 import "errors"
 import "testing"
-import "github.com/nowk/assert"
-import . "github.com/nowk/go-calm"
+import "gopkg.in/nowk/assert.v2"
 
 func TestCalm(t *testing.T) {
 	err := Calm(func() {
